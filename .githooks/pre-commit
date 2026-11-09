@@ -1,0 +1,8 @@
+
+#!/bin/sh
+
+echo "Ejecutando revision de secretos con Gitleaks..."
+
+gitleaks protect --staged --verbose
+
+exit $?
